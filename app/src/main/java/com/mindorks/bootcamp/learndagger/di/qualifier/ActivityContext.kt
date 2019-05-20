@@ -1,7 +1,8 @@
-package com.mindorks.bootcamp.learndagger.di.scope
+package com.mindorks.bootcamp.learndagger.di.qualifier
 
+import javax.inject.Qualifier
 import javax.inject.Scope
 
-@Scope
+@Qualifier
 @kotlin.annotation.Retention(AnnotationRetention.BINARY)
-annotation class ActivityScope
+annotation class ActivityContext

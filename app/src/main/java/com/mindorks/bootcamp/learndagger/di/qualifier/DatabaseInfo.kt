@@ -5,4 +5,4 @@ import javax.inject.Scope
 
 @Qualifier
 @kotlin.annotation.Retention(AnnotationRetention.BINARY)
-annotation class ActivityContext
+annotation class DatabaseInfo

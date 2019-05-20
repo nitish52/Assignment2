@@ -1,4 +1,4 @@
-package com.mindorks.bootcamp.learndagger.data.local
+package com.mindorks.bootcamp.learndagger.data.remote
 
 import android.content.Context
 import com.mindorks.bootcamp.learndagger.di.qualifier.ApplicationContext
@@ -7,9 +7,9 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class DatabaseService @Inject constructor(@ApplicationContext context: Context,@DatabaseInfo databaseName:String,@DatabaseInfo databaseVersion:String){
+public class NetworkService @Inject constructor(@ApplicationContext context: Context, @DatabaseInfo apiKey:String){
 
     fun getDummyData():String{
-        return "DATABASE_DUMMY_DATA"
+        return "NETWORK_DUMMY_DATA"
     }
 }

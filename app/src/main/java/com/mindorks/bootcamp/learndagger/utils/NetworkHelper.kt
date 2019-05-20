@@ -1,4 +1,4 @@
-package com.mindorks.bootcamp.learndagger.data.remote
+package com.mindorks.bootcamp.learndagger.utils
 
 import android.content.Context
 import com.mindorks.bootcamp.learndagger.di.qualifier.ApplicationContext
@@ -7,9 +7,9 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class NetworkService @Inject constructor(@ApplicationContext context: Context, @DatabaseInfo apiKey:String){
+class NetworkHelper @Inject constructor(@ApplicationContext context: Context){
 
-    fun getDummyData():String{
-        return "NETWORK_DUMMY_DATA"
+    fun isNetworkConnected():Boolean{
+        return false
     }
 }
